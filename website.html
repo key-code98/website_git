@@ -1,0 +1,347 @@
+<html>
+<head><meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>InAll Gadget</title>
+<link rel="shortcut icon" href="img/favicon.ico" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/personal.css" rel="stylesheet" type="text/css">
+<script src="https://use.fontawesome.com/5655004577.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Manjari:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('video/landing.mp4') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+/*Placeholder color change*/
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+	}
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+	color: white;
+	}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #fff;
+  background-color: #4466fb;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+</style>
+
+<body class="mybg-svg-f">
+  <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top d-flex justify-content-between">
+  
+    <div class="bg-light">
+      <a href="#inicio">
+        <img src="img/logos/logo_dev2.png" class="d-md-inline-block d-none" style="width: 15%;">
+        <img src="img/logos/logo_dev2.png" style="width: 80px" class="d-md-none">
+      </a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav text-center  rounded">
+          <li class="nav-item  text-dark">
+            <a class="nav-link  text-dark" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="ecommerce.html">E-commerce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="website.html">Website</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="menus.html">Menú Digital</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon rounded navbar-dark"></span>
+    </button>
+  </nav>
+
+<div class="container-fluid p-0 mt-0">
+  <header>
+    <div class="overlay"></div>
+    <!--
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="video/website.mp4" type="video/mp4">
+    </video>
+    -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-4 font-weight-light">Texto de Prueba</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+  <div class="container-fluid mytitle-wave-left mybg-svg py-5"></div>
+
+  <div class="container-fluid bg-transparent pt-4">
+    <div class="card-group border-0">
+      <div class="card bg-transparent border-0">
+        <div class="card-body">
+            <h5 class="card-title mytitle-wave-left text-right font-title" style="background-color: #27debf;">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card bg-transparent border-0">
+          <div class="card-body">
+            <div class="container rounded-circle myshadow bg-dark">
+              <img src="img/website_users.png" class="card-img-top w-100">
+                <h3 id="element" class="multiplestring text-white p-2 rounded" style="background-color: #000; opacity: 0.8;  font-family: 'Sulphur Point', sans-serif; font-size: 25px"></h3>
+            </div>
+          </div>
+        </div>
+      <div class="card bg-transparent border-0">
+        <div class="card-body">
+          <h5 class="card-title mytitle-wave-right font-title" style="background-color: #27debf;">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mywave-top-left mybg-svg m-0 py-5"></div>
+
+<div class="container-fluid pb-4 mb-0 pt-4 mt-0 text-center" style="background-image: url(img/website_responsive.jpg); 	background-attachment: fixed; background-size: cover; background-position: center left;">
+  <div class="container-fluid">
+    <div class="card-deck">
+      <div class="card bg-light d-flex align-items-center border border-info ml-3 mr-3 mt-4 rounded-bottom rounded-top-0">
+        <img src="img/icons/website_1.svg" class="card-img-top w-25 pt-2 pb-3 "/>
+          <h3 class="card-title p-2 rounded-bottom bg-info text-white myshadow w-75">Basic <i class="fa fa-laptop float-right"></i></h3>
+        <div class="card-body bg-white p-3">
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card bg-light d-flex align-items-center rounded-bottom border border-success ml-3 mr-3 mt-2">
+        <img src="img/icons/website_2.svg" class="card-img-top w-25 pt-2 pb-3">
+          <h3 class="card-title p-2 rounded-bottom bg-success text-white myshadow w-75">Plus <i class="fa fa-certificate float-right"></i></h3>
+        <div class="card-body bg-secondary p-3">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card bg-light d-flex align-items-center rounded-bottom border border-primary ml-3 mr-3 p-0">
+        <img src="img/icons/website_3.svg" class="card-img-top w-25 pt-2 pb-3"/>
+          <h3 class="card-title p-2 rounded-bottom bg-primary text-white myshadow w-75">Premium <i class="fa fa-trophy float-right"></i></h3>
+        <div class="card-body bg-dark p-3 text-white">
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mytitle-wave-left mybg-svg m-0 py-5"></div>
+
+<div class="container-fluid pt-3 pb-3">
+  <div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-5">
+    <section class="container d-flex justify-content-center">
+      <div class="container myshadow rounded-circle bg-white w-50 p-0 m-2">
+        <img src="img/logos/qr-code.svg" class="w-100">
+      </div>
+    </section>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-4 offset-lg-2">
+    <div class="card bg-transparent border-0">
+      <h3 class="card-title m-0 pt-0 pb-3 text-center text-white mybg-salmon myshadow mytitle-wave-right font-title">
+        ¡Tu sitio con codigo QR!
+      </h3>
+      <div class="card-body text-white rounded pt-3 pb-3 my-5">
+        Aumenta las visualizaciones de tu stitio con un código QR personalizado para que muestres la personalidad de tu negoxio desde el primer instante que comienzas a compartir tu sitio online
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <div class="container-fluid mywave-top-right mybg-svg m-0 py-5"></div>
+
+  <div class="container-fluid pb-4 mb-0 pt-4 mt-0 text-center mybg-contact">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-6">
+        <section class="container d-flex justify-content-center">
+              <div class="container myshadow rounded-circle bg-white w-50 p-0 m-2">
+                <img src="img/logos/contact.svg" class="w-100" alt="Ecommerce-builder">
+            </div>
+        </section>
+      </div>
+
+      <div class="col-sm-12 col-md-12 col-lg-4 offset-lg-1 pt-4 pl-0 pr-0 mt-4 text-center">
+        <form action="send_mail.php" method="POST" class="contact form-control mt-2 bg-transparent text-white w-75 d-inline-block"
+          name="myform" onsubmit="return val()" style="border: #33daff solid; border-radius: 12px; ">
+            <div class="form-group">
+                <input type="text" name="empresa" id="empresa" class="form-control bg-transparent text-white" placeholder="Empresa o Corporación" maxlength="25">
+            </div>
+            <div class="form-group">
+              <input type="text" id="name" name="name" class="form-control bg-transparent text-white" placeholder="Nombre" maxlength="25">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" class="form-control bg-transparent text-white" placeholder="E-mail" maxlength="255" required="required">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" name="phone" class="form-control bg-transparent text-white" placeholder="Número de teléfono o Whatsapp" maxlength="10" required="required">
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" class="form-control bg-transparent text-white" placeholder="Comment" maxlength="255"></textarea>
+            </div>
+            <div class="container">
+                <button type="button" class="btn btn-outline-info text-white bg-transparent mt-3 mb-3">Enviar</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small bg-secondary pt-4 text-white">
+    <div class="container-fluid text-center text-md-left">
+
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase">Footer Content</h5>
+          <p>Here you can use rows and columns to organize your footer content.</p>
+        </div>
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase">Links</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+  
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+<script>
+  new TypeIt('#element', {
+          breakLines: false,
+          speed: 100,
+          loop: true,
+        })
+          .type("Es hora de digitalizar tu negocio.")
+          .pause(1000)
+          .delete(10)
+          .type("us ideas.")
+          .pause(2000)
+          .delete(6)
+          .type("productos.")
+          .pause(1000)
+          .delete(10)
+          .type('platillos...')
+          .pause(100)
+          .go();
+
+      $( document ).ready(function() {
+          $('#ejemplo3').typeIt({
+            strings: ["Texto que se escribe para ser...", "borrado y reemplazado por otro texto!"],
+            speed: 100,
+            loop: true,
+            breakLines: true
+          });
+
+          $('#ejemplo4').typeIt({
+            strings: ["Edita, elimina y sube productos", "Ten el control de tus precios a la mano", "Administrar tu e-commerce nunca fué tan fácil"],
+            speed: 100,
+            loop: true,
+            breakLines: false
+          });
+      });
+</script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<html>
+<head><meta charset="utf8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>InAll Gadget</title>
+<link rel="shortcut icon" href="img/favicon.ico" />
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/personal.css" rel="stylesheet" type="text/css">
+<script src="https://use.fontawesome.com/5655004577.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('video/landing.mp4') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+/*Placeholder color change*/
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: white;
+	opacity: 1; /* Firefox */
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: white;
+	}
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+	color: white;
+	}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #fff;
+  background-color: #4466fb;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+  </style>
+
+<body>
+<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top d-flex justify-content-between">
+
+    <div class="bg-light">
+      <a href="#inicio">
+        <img src="img/logo_dev.jpeg" style="height: 70px" class="d-md-inline-block d-none">
+        <img src="img/logo_dev.jpeg" style="width: 100px" class="d-md-none">
+      </a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav text-center  rounded">
+          <li class="nav-item  text-dark">
+            <a class="nav-link  text-dark" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html#services">E-commerce</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="index.html#prices">Website</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="nosotros.html">Otros</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border-color: #000;">
+    <span class="navbar-toggler-icon rounded navbar-dark"></span>
+  </button>
+
+</nav>
+
+<div class="container-fluid p-0 mt-0">
+  <header>
+    <div class="overlay"></div>
+    <!--
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="video/coding.mp4" type="video/mp4">
+    </video>
+    -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-right align-items-right">
+        <div class="w-100 text-white">
+          <h1 class="display-4 font-weight-light">Texto de Prueba</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+  
+  <div class="container-fluid mytitle-wave-left mybg-svg" style="height: 12%;"></div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5">
+        <h3 class="font-weight-light card-title pt-3 pb-3 text-center" style="border-bottom: #000 solid; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+          <i class="fa fa-cogs"></i> Servicios individuales que cumplen necesidades
+        </h3>
+          <section class="container p-0">
+            Muchas veces deseamos un servicio o funcionalidad específico y no sabemos si éste es posible, a continuación te mostramos la lista de servicios y funciones que se pueden desarrollar por serparado.
+          </section>
+          <ul class="list-group pt-4 dropdown">
+            <li class="list-group-item" id="b_desc_0"><i class="fa fa-cc-visa pr-2 pl-2"></i>API de Pago<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_0"></i></li>
+            <section class="container p-2" id="desc_0" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_2"><i class="fa fa-magic pr-2 pl-2"></i>Animaciones en diseño<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_2"></i></li>
+            <section class="container p-2" id="desc_2" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_3"><i class="fa fa-lightbulb-o pr-2 pl-2"></i>Diseño plus<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_3"></i></li>
+            <section class="container p-2" id="desc_3" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_4"><i class="fa fa-qrcode pr-2 pl-2"></i>Menú Código QR<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_4"></i></li>
+            <section class="container p-2" id="desc_4" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_4"><i class="fa fa-comments pr-2 pl-2"></i>Chat Flotante<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_4"></i></li>
+            <section class="container p-2" id="desc_4" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_4"><i class="fa fa-check-square-o pr-2 pl-2"></i>Formulario de contacto<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_4"></i></li>
+            <section class="container p-2" id="desc_4" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_4"><i class="fa fa-whatsapp pr-2 pl-2"></i>API Whatsapp<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_4"></i></li>
+            <section class="container p-2" id="desc_4" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_4"><i class="fa fa-map-marker pr-2 pl-2"></i>API Geolocalización Google Maps<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_4"></i></li>
+            <section class="container p-2" id="desc_4" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_1"><i class="fa fa-shopping-cart pr-2 pl-2"></i>E-commerce Whatsapp<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_1"></i></li>
+            <section class="container p-2" id="desc_1" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_4"><i class="fa fa-cart-plus pr-2 pl-2"></i>E-commerce plus<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_4"></i></li>
+            <section class="container p-2" id="desc_4" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+            <li class="list-group-item" id="b_desc_4"><i class="fa fa-pencil-square pr-2 pl-2"></i>Sistema ADMIN para E-commerce plus<i class="fa fa-chevron-circle-down fa-2x float-right text-info" id="desc_icon_4"></i></li>
+            <section class="container p-2" id="desc_4" style="display: none;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut al
+            </section>
+          </ul>
+    </div>
+    <div class="col-md-7 bg-secondary">
+      <div class="container text-center pt-4 mt-4">
+        <div class="container bg-light rounded-circle myshadow p-0 w-75 border-0">
+          <img src="img/website_speed.svg" class="w-100" alt="website_speed">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mytitle-wave-left mybg-svg m-0" style="height: 12%; "></div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div id="carouselExampleIndicators" class="carousel slide myanimate-left load-hidden" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+    
+                <div class="container-fluid text-center bg-dark">
+    
+                    <div class="card d-inline-block bg-transparent" style="border: none">
+                      <img class="card-img-top" src="img/otros_car1.jpg" alt="Card image" style="width:75%">
+                      <div class="card-body bg-light myshadow">
+                        <h4 class="card-title  mysecond-back  p-2">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      </div>
+                    </div>
+    
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="container-fluid text-center bg-dark">
+    
+                    <div class="card d-inline-block bg-transparent" style="border: none">
+                      <img class="card-img-top" src="img/otros_car2.jpg" alt="Card image" style="width:75%">
+                      <div class="card-body  bg-light  myshadow">
+                        <h4 class="card-title  mysecond-back  p-2">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="container-fluid text-center bg-dark">
+                    <div class="card d-inline-block bg-transparent" style="border: none">
+                      <img class="card-img-top" src="img/otros_car3.jpg" alt="Card image" style="width:75%">
+                      <div class="card-body bg-light myshadow">
+                        <h4 class="card-title  mysecond-back  p-2">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                      </div>
+                    </div>
+  
+                </div>
+    
+    
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-md-4">
+          <section class="container pt-4 mt-4">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <section class="card-footer">
+              <img src="img/analysis.svg" class="card-img-bottom">
+            </section>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  
+    <div class="container-fluid mytitle-wave-right mybg-svg m-0" style="height: 12%; "></div>
+
+    <div class="container-fluid pb-4 mb-0 pt-4 mt-0 text-center" style="background-image: url(img/contact_us.jpg); 	background-attachment: fixed; background-size: cover;">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="container mt-4 p-4" style="border-bottom:solid #fff; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+            <h2 id="ejemplo3" class="multiplestring text-white font-weight-light"></h2>
+          </div>
+          <div class="row mt-4 pt-4">
+            <div class="col-4 col-sm-4">
+              <img src="img/whatsapp.svg" class="d-none d-md-inline" style="width: 35%;">
+              <img src="img/whatsapp.svg" class="d-md-none" style="width: 50%;">
+            </div>
+            <div class="col-4 col-sm-4">
+              <img src="img/email.svg" class="d-none d-md-inline" style="width: 35%;">
+              <img src="img/email.svg" class="d-md-none" style="width: 50%;">
+            </div>
+            <div class="col-4 col-sm-4">
+              <img src="img/support.svg" class="d-none d-md-inline" style="width: 35%;">
+              <img src="img/support.svg" class="d-md-none" style="width: 50%;">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 pt-4 mt-4 text-center">
+          <form action="send_mail.php" method="POST" class="form-control mt-2 bg-transparent text-white w-75 d-inline-block" name="myform" onsubmit="return val()" style="border: #33daff solid; border-radius: 12px;; ">
+            <div class="form-group">
+              <input type="text" name="curso" id="curso" class="form-control bg-transparent text-white" value="Curso Éxito Financiero" readonly>
+            </div>
+            <div class="form-group">
+              <input type="number" name="asistentes" id="asistentes" class="form-control bg-transparent text-white" min="7" max="100" placeholder="Número de aistentes" maxlength="25">
+            </div>
+            <div class="form-group">
+              <input type="text" name="empresa" id="empresa" class="form-control bg-transparent text-white" placeholder="Empresa o Corporación" maxlength="25">
+            </div>
+            <div class="form-group">
+              <input type="text" id="name" name="name" class="form-control bg-transparent text-white" placeholder="Nombre"  maxlength="25">
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" class="form-control bg-transparent text-white" placeholder="E-mail" maxlength="255" required="required">
+            </div>
+            <div class="form-group">
+              <input type="tel" id="phone" name="phone" class="form-control bg-transparent text-white" placeholder="Número de teléfono o Whatsapp" maxlength="10" required="required">
+            </div>
+            <div class="form-group">
+              <textarea  id="message" name="message"  class="form-control bg-transparent text-white" placeholder="Comment" maxlength="255"></textarea>
+            </div>
+            <div class="container">
+                <button type="button" class="btn btn-outline-success bg-transparent mt-3 mb-3" onclick="sendWhats()">Whatsapp</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-secondary pt-4 text-white">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-white">Link 1</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 2</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 3</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<script>
+      $( document ).ready(function() {
+
+            $('#ejemplo3').typeIt({
+              strings: ["Texto que se escribe para ser...", "borrado y reemplazado por otro texto!"],
+              speed: 100,
+              loop: true,
+              breakLines: true
+            });
+
+            $('#ejemplo4').typeIt({
+              strings: ["Edita, elimina y sube productos", "Ten el control de tus precios a la mano", "Administrar tu e-commerce nunca fué tan fácil"],
+              speed: 100,
+              loop: true,
+              breakLines: false
+            });
+
+            $('#b_desc_0').on('click', function(){
+                  $('#desc_0').toggle('slow');
+                  $('#desc_icon_0').toggleClass('fa-chevron-circle-down');
+                  $('#desc_icon_0').toggleClass('fa-chevron-circle-up');
+            });
+            $('#b_desc_1').on('click', function(){
+                  $('#desc_1').toggle('slow');
+                  $('#desc_icon_1').toggleClass('fa-chevron-circle-down');
+                  $('#desc_icon_1').toggleClass('fa-chevron-circle-up');
+            });
+            $('#b_desc_2').on('click', function(){
+                  $('#desc_2').toggle('slow');
+                  $('#desc_icon_2').toggleClass('fa-chevron-circle-down');
+                  $('#desc_icon_2').toggleClass('fa-chevron-circle-up');
+            });
+            $('#b_desc_3').on('click', function(){
+                  $('#desc_3').toggle('slow');
+                  $('#desc_icon_3').toggleClass('fa-chevron-circle-down');
+                  $('#desc_icon_3').toggleClass('fa-chevron-circle-up');
+            });
+            $('#b_desc_4').on('click', function(){
+                  $('#desc_4').toggle('slow');
+                  $('#desc_icon_4').toggleClass('fa-chevron-circle-down');
+                  $('#desc_icon_4').toggleClass('fa-chevron-circle-up');
+            });
+
+      });
+</script>
+</body>
+</html>
